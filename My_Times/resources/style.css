@@ -39,3 +39,70 @@ header nav a{
   padding-right:10px;
   padding-left: 20px;
 }
+
+/*Main Divison*/
+
+.main{
+  position: relative;
+  display: flex;
+  top: 120px;
+  border: 2px red dotted;
+  justify-content: space-around;
+}
+
+.large{
+  width: 630px;
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.medium{
+  width: 300px;
+
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.small{
+  width: 240px;
+
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.story{
+  border: 1px black solid;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.imgStory{
+  border: 1px black solid;
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  height: 300px;
+}
+
+#one {
+  font-size: 40px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+}
+
+#two{
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+}
+
+#three{
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+}
+
+#four{
+  background-image:url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
+}
