@@ -11,7 +11,7 @@ body{
 }
 
 div{
-  border: 4px red dotted;
+
   background-color:black;
 }
 
@@ -69,6 +69,7 @@ nav a{
   height:700px;
   width:1200px;
   align-items: center;
+  margin-bottom: 40px;
 }
 /*Tea of the Month Styling*/
 #teaMonth{
@@ -81,6 +82,7 @@ nav a{
   width: 1000px;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 img {
   height:200px;
@@ -96,7 +98,7 @@ img {
   margin: 0;
 }
 
-/*Lacations Styling*/
+/*Locations Styling*/
 #locations{
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
   height:500px;
@@ -105,7 +107,6 @@ img {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-
 }
 
 #locations .content{
@@ -114,8 +115,20 @@ img {
   margin:15px 20px;
   opacity: 1;
 }
+
 #locations h2{
   width: 100%;
   margin: 0px;
+}
 
+/*Footer Styling*/
+footer{
+  position: relative;
+  top: 70px;
+  text-align: left;
+  padding-left: 20px;
+}
+#footer{
+  width:1000px;
+  height: 200px;
 }
