@@ -1,0 +1,19 @@
+body{
+  font-family: Helvetica;
+  color:white;
+  background-color: black;
+
+}
+header{
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  height: 4rem;
+}
+
+header img{
+  padding-left: 10%;
+  padding-right: 2%;
+  height: 1.5em;
+
+}
