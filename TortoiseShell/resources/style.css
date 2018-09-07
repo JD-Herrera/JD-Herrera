@@ -1,7 +1,11 @@
 html{
-  font-size: 18px;
   line-height: 1.4;
   font-family: Helvetica;
+  font-size: 18px;;
+}
+
+body{
+  font-size:1rem;
 }
 
 .container{
@@ -9,6 +13,7 @@ html{
   margin:0 auto;
 }
 /*Banner and Header*/
+/*Image of the entire top*/
 .banner{
   background-image:url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
   background-repeat:no-repeat;
@@ -17,6 +22,7 @@ html{
   width:100%;
 }
 
+/*Header*/
 .header.container{
   background-color:cadetblue;
   display: flex;
@@ -52,6 +58,9 @@ nav{
   display: inline-flex;
 }
 
+.mobile{
+  display: none;
+}
 /*Headline*/
 .headline{
   display: flex;
@@ -73,6 +82,59 @@ nav{
   line-height: 1.2;
   font-weight: bold;
   padding: 1.5rem 5rem;
+}
+
+
+@media only screen and (max-width:1024px){
+  .banner{
+    height: 22rem;
+  }
+
+  #banner{
+    margin-right: 2rem;
+    margin-top:5rem;
+    background-color: white;
+  }
+
+  #banner h1{
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
+
+  .header.container{
+    top:0;
+  }
+
+}
+
+@media only screen and (max-width:700px){
+  .banner{
+    height: 17rem;
+  }
+
+  #banner{
+    width:100%;
+    margin:auto;
+    margin-top: 9rem;
+    text-align: center;
+  }
+
+  #banner h1{
+    font-size: 1.33rem;
+    padding: 1rem 0rem;
+  }
+
+  .header.container{
+    top:0;
+  }
+
+  nav{
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+  }
 }
 
 /*Icon gallery*/
@@ -116,6 +178,7 @@ nav{
   display: flex;
   margin-top: 3rem;
   margin-bottom:  5rem;
+  justify-content: center;
 }
 #info{
   display: inline-block;
@@ -139,4 +202,72 @@ nav{
   color:white;
   font-weight: bold;
   margin-bottom: 1rem;
+}
+
+/*Footer*/
+.footer{
+  display: flex;
+  align-items: center;
+  background-color: azure;
+}
+
+.footer img{
+  padding:4rem 1rem 4rem 4rem;
+  display: inline;
+}
+
+@media only screen and (max-width:700px){
+  .gallery{
+    margin-top:3.77rem;
+    flex-direction: column;
+  }
+
+  .icons{
+    height:auto;
+    margin-bottom:1.54rem;
+  }
+
+  .picture{
+    margin-bottom:.75rem;
+  }
+
+  /*Business info*/
+  #bizinfo{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .info{
+    display: block;
+    width:100%;
+    margin:0;
+    padding:0;
+  }
+
+  .container.info h2{
+    text-align: center;
+    width:100%;
+    margin:0;
+    padding-left: 0;
+    padding-right:0;
+  }
+
+  .info p{
+    text-align: center;
+    padding-top:1rem;
+    margin:0;
+    margin-bottom: 4rem;
+  }
+
+  .footer{
+    margin: 0;
+  }
+  .footer img{
+    margin:auto;
+  }
+  .footer p{
+    display: none;
+  }
 }
